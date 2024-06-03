@@ -1,0 +1,68 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* { /*effects everything*/
+    padding: 0;
+    margin: 0;
+}
+
+body { /*effects entire body*/
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* so navigating to specific section will scroll to that section and not be abrupt */
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around; /* flex items are evenly distributed along line */
+    align-items: center;
+    height: 17vh; /* nav will take 17% of screen */
+}
+
+.nav-links {
+    gap: 2rem; /* gap between each list item is 2rem */
+    list-style: none; /* to prevent bullet points */
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none; /* removed underline */
+    text-decoration-color: white;
+}
+
+a:hover { /* what should happen upon mouse hover */
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem; /* keep 1rem distance between text and underline */
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default; /* to prevent cursor from becoming 'I' icon when hover the logo */
+}
+
+

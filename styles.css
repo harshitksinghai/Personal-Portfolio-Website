@@ -29,8 +29,9 @@ a, .btn {
 /* Desktop Nav */
 
 nav, .nav-links {
-    display: flex;
-}
+    display: flex; /* The default behavior of a flex container with display: flex; is to align its children in a row */
+} /* The <nav> element arranges its children (<div class="logo"> and the <div> containing the <ul>) horizontally.
+Within the second <div>, the unordered list (<ul>) with the class nav-links arranges its list items (<li>) horizontally. */
 
 nav {
     justify-content: space-around; /* flex items are evenly distributed along line */
